@@ -25,3 +25,8 @@ h2 {
   color: purple;
   background-color: yellow;
 }
+
+.note {
+  color: blue;
+  font-weitght: bold;
+}
