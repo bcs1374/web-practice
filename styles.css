@@ -26,6 +26,10 @@ h2 {
   background-color: yellow;
 }
 
+.title {
+  color: green;
+}
+
 .note {
   color: blue;
   font-weitght: bold;
