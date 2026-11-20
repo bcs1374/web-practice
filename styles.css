@@ -20,3 +20,8 @@ h2 {
   color: orange;
   font-weight: bold;
 }
+
+#main-title {
+  color: purple;
+  background-color: yellow;
+}
