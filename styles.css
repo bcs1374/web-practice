@@ -37,5 +37,9 @@ h2 {
 }
 
 img {
-  width:auto
+  width:500px;
+}
+
+.nav {
+  border: 2px solid blue;
 }
