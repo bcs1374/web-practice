@@ -45,3 +45,7 @@ img {
   display: flex;
   justify-content: center;
 }
+
+main {
+  padding: 24px;
+}
