@@ -50,3 +50,9 @@ main {
   padding: 24px;
   margin: 24px 0;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
