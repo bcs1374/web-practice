@@ -56,3 +56,28 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+body {
+  background-color: #f3f4f6;
+  font-family: system-ui, sans-serif;
+}
+
+header {
+  background-color: #1f2933;
+  color: white;
+  padding: 16px 24px;
+}
+
+main {
+  background-color: white;
+  padding: 24px;
+  margin: 24px auto;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  color: #6b7280;
+  padding: 12px;
+}
