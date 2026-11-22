@@ -36,3 +36,10 @@ const greeting = document.querySelector('#greeting');
 nameInput.addEventListener('input', function () {
   greeting.textContent = 'Hello, ' + nameInput.value + '!';
 });
+
+function resetButtonClick() {
+  status.textContent = 'Button was clicked!';
+}
+
+const button2 = document.querySelector('#reset-button');
+button2.addEventListener('click', resetButtonClick);
