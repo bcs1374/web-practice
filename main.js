@@ -28,7 +28,7 @@ title.style.fontSize = '32px';
 const button = document.querySelector('#magic-button');
 const message = document.querySelector('#message');
 
-button.addEventListener('click', handleButtonClick());
+button.addEventListener('click', handleButtonClick);
 
 const nameInput = document.querySelector('#name-input');
 const greeting = document.querySelector('#greeting');
