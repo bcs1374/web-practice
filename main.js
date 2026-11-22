@@ -42,4 +42,5 @@ function resetButtonClick() {
 }
 
 const button2 = document.querySelector('#reset-button');
+const status = document.querySelector('#status')
 button2.addEventListener('click', resetButtonClick);
