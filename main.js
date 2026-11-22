@@ -27,3 +27,10 @@ const message = document.querySelector('#message');
 button.addEventListener('click', function () {
   message.textContent = 'Button was clicked!';
 });
+
+const nameInput = document.querySelector('#name-input');
+const greeting = document.querySelector('#greeting');
+
+nameInput.addEventListener('input', function () {
+  greeting.textContent = 'Hello, ' + nameInput.value + '!';
+});
