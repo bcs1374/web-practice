@@ -13,8 +13,17 @@ const tagline = document.querySelector('#tagline');
 title.textContent = 'Welcome, Benjamin!';
 tagline.textContent = 'This page was just updated with JavaScript.';
 
-const title = document.querySelector('#page-title'); // or another id you have
 
-title.style.color = 'orange';
-title.style.backgroundColor = 'black';
+const link = document.querySelector('#link');
+
+link.href = "http://google.com";
+tagline.style.color = 'orange';
+tagline.style.backgroundColor = 'black';
 title.style.fontSize = '32px';
+
+const button = document.querySelector('#magic-button');
+const message = document.querySelector('#message');
+
+button.addEventListener('click', function () {
+  message.textContent = 'Button was clicked!';
+});
