@@ -1,3 +1,7 @@
+function handleButtonClick() {
+  message.textContent = 'Button was clicked!';
+}
+
 const heading = document.getElementById("page-title");
 console.log(heading);
 
@@ -24,9 +28,7 @@ title.style.fontSize = '32px';
 const button = document.querySelector('#magic-button');
 const message = document.querySelector('#message');
 
-button.addEventListener('click', function () {
-  message.textContent = 'Button was clicked!';
-});
+button.addEventListener('click', handleButtonClick());
 
 const nameInput = document.querySelector('#name-input');
 const greeting = document.querySelector('#greeting');
