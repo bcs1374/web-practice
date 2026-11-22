@@ -12,3 +12,9 @@ const tagline = document.querySelector('#tagline');
 
 title.textContent = 'Welcome, Benjamin!';
 tagline.textContent = 'This page was just updated with JavaScript.';
+
+const title = document.querySelector('#page-title'); // or another id you have
+
+title.style.color = 'orange';
+title.style.backgroundColor = 'black';
+title.style.fontSize = '32px';
