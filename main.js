@@ -25,15 +25,16 @@ form.addEventListener('submit', function (event) {
 
     // 3) when button is clicked, remove the li
     deleteButton.addEventListener('click', function (event) {
+      event.stopPropagation();
       li.remove();
-    }
+    });
     li.addEventListener('click', function () {
     console.log('Clicked!', li.classList);
     li.classList.toggle('done');
     console.log('After toggle', li.classList);
     
     });
-  });
+  
 
   const list = document.querySelector('ul');  // your existing <ul>
   list.appendChild(li);  
