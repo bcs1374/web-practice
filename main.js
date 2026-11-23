@@ -13,6 +13,11 @@ form.addEventListener('submit', function (event) {
   }
   const li = document.createElement('li');  // 1) create a new <li> (not on the page yet)
   li.textContent = input.value;            // set its text
+  
+  li.addEventListener('click', function () {
+    li.classList.toggle('done');
+  });
+
   const list = document.querySelector('ul');  // your existing <ul>
   list.appendChild(li);  
   console.log('Task:', input.value);
