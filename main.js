@@ -18,6 +18,17 @@ form.addEventListener('submit', function (event) {
     console.log('Clicked!', li.classList);
     li.classList.toggle('done');
     console.log('After toggle', li.classList);
+    // 1) create delete button
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+
+    // 2) put it inside the li
+    li.appendChild(deleteButton);
+
+    // 3) when button is clicked, remove the li
+    deleteButton.addEventListener('click', function (event) {
+      li.remove();
+    });
   });
 
   const list = document.querySelector('ul');  // your existing <ul>
