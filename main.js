@@ -41,3 +41,10 @@ form.addEventListener('submit', function (event) {
   console.log('Task:', input.value);
   input.value = '';     
 });
+
+const clearAllButton = document.querySelector('#clear-all');
+
+clearAllButton.addEventListener('click', function () {
+  const list = document.querySelector('#tasks');
+  list.innerHTML = '';
+});
