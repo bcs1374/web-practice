@@ -108,3 +108,9 @@ footer {
   padding: 8px 10px;
   border-bottom: 1px solid #eee;
 }
+
+.todo-app li.done {
+  text-decoration: line-through;
+  color: #888;
+  opacity: 0.8;
+}
