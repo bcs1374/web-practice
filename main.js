@@ -15,7 +15,9 @@ form.addEventListener('submit', function (event) {
   li.textContent = input.value;            // set its text
 
   li.addEventListener('click', function () {
+    console.log('Clicked!', li.classList);
     li.classList.toggle('done');
+    console.log('After toggle', li.classList);
   });
 
   const list = document.querySelector('ul');  // your existing <ul>
