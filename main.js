@@ -48,3 +48,13 @@ clearAllButton.addEventListener('click', function () {
   const list = document.querySelector('#tasks');
   list.innerHTML = '';
 });
+
+async function getPost() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+  console.log('response =', response);
+
+  const data = await response.json();
+  console.log('data =', data);
+}
+
+getPost();
