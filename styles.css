@@ -1,46 +1,8 @@
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  background-color: #f5f5f5;
-}
-
-h1 {
-  text-align: center;
-}
-
-#search-area {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-#search-input {
-  flex: 1;
-  padding: 0.5rem;
-}
-
-#search-button {
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
-
-#status-message {
-  font-size: 0.95rem;
-  color: #444;
-  margin-bottom: 0.5rem;
-}
-
-#results-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-#results-list li {
-  background: white;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem 0.75rem;
-  border-radius: 4px;
-  border: 1px solid #ddd;
+.country-card {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fdfdfd;
 }
