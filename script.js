@@ -30,7 +30,11 @@ searchButton.addEventListener('click', async () => {
 
     for (const book of firstTen) {
       const li = document.createElement('li');
-      li.textContent = book.title || 'Untitled book';
+
+      const title = book.title || 'Untitled book';
+      const authors = book.author_name ? book.author_name.join(', ') : 'Unknown author';
+
+      li.textContent = `${title} — ${authors}`;
       resultsList.appendChild(li);
     }
   } catch (error) {
