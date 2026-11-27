@@ -27,6 +27,10 @@ searchButton.addEventListener('click', async () => {
 
     // Just show the first 10 results
     const firstTen = books.slice(0, 10);
+    if (firstTen.length === 0) {
+      statusMessage.textContent = 'No books found for that search.';
+      return;
+    }
 
     for (const book of firstTen) {
       const li = document.createElement('li');
