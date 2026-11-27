@@ -23,6 +23,16 @@ searchButton.addEventListener('click', async () => {
 
     console.log('Full response data:', data);
     statusMessage.textContent = `Found ${data.numFound} results (showing first few below).`;
+    const books = data.docs;
+
+    // Just show the first 10 results
+    const firstTen = books.slice(0, 10);
+
+    for (const book of firstTen) {
+      const li = document.createElement('li');
+      li.textContent = book.title || 'Untitled book';
+      resultsList.appendChild(li);
+    }
   } catch (error) {
     console.error('Search error:', error);
     statusMessage.textContent = 'Something went wrong with the search. Please try again.';
