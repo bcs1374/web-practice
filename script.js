@@ -17,12 +17,13 @@ countryInput.addEventListener('keydown', function (event) {
 updateButton.addEventListener('click', async function () {
   const newName = countryInput.value;
   const url = `https://countries.dev/name/${newName}`;
+  console.log(url);
 
   const response = await fetch(url);
   const data = await response.json();
 
   const country = data[0]; // first match
-  console.log(data)
+  console.log(data);
   countryName.textContent = country.name;
   // later: set capital, region, population, etc.
 });
