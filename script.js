@@ -1,4 +1,5 @@
 const countryName = document.querySelector('#country-name');
+const countryName2 = document.querySelector('#country-name2');
 const countryInput = document.querySelector('#country-input');
 const updateButton = document.querySelector('#update-country');
 
@@ -38,7 +39,7 @@ updateButton.addEventListener('click', async function () {
   console.log('population element:', countryPopulation);
 // ...
 
-  countryName.textContent = country.name;
+  countryName2.textContent = country.name;
   countryCapital.textContent = country.capital;
   countryRegion.textContent = country.region;
   countryPopulation.textContent = country.population;
