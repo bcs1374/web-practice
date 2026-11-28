@@ -35,8 +35,6 @@ updateButton.addEventListener('click', async function () {
 
 // ...
 
-  const country = data[0];
-
   countryName.textContent = country.name;
   countryCapital.textContent = country.capital;
   countryRegion.textContent = country.region;
