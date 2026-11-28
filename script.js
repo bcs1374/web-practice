@@ -22,7 +22,10 @@ updateButton.addEventListener('click', async function () {
   const response = await fetch(url);
   const data = await response.json();
 
+  
+
   const country = data[0]; // first match
+  console.log('country:', country);
   console.log(data);
   countryName.textContent = country.name;
   // later: set capital, region, population, etc.
