@@ -33,7 +33,9 @@ updateButton.addEventListener('click', async function () {
   console.log('capital element:', countryCapital);
   const countryRegion = document.querySelector('#country-region');
   const countryPopulation = document.querySelector('#country-population');
-
+  console.log('capital element:', countryCapital);
+  console.log('region element:', countryRegion);
+  console.log('population element:', countryPopulation);
 // ...
 
   countryName.textContent = country.name;
